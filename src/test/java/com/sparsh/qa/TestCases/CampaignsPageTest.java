@@ -15,6 +15,7 @@ public class CampaignsPageTest extends TestBase {
 		   }
 		@BeforeMethod
 		public void setup(){
+			//
 			initialization();
 			LoginPage login=new LoginPage();
 			homepage=login.login(Property.getProperty("username"),Property.getProperty("password"));
