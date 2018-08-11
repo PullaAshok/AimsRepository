@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+           <class name="com.sparsh.qa.TestCases.HomePageTest"></class>
+           <class name="com.sparsh.qa.TestCases.ContactPageTest"></class>
+           
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

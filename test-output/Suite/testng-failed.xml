@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="true">
+  <test name="Test(failed)" parallel="true">
+    <classes>
+      <class name="com.sparsh.qa.TestCases.DealsPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="newDealsPageTest"/>
+        </methods>
+      </class> <!-- com.sparsh.qa.TestCases.DealsPageTest -->
+      <class name="com.sparsh.qa.TestCases.ContactPageTest">
+        <methods>
+          <include name="validatecombinedformTest"/>
+          <include name="verifyframelistTest"/>
+          <include name="createnewcontactTests"/>
+          <include name="verifycontactlableTest"/>
+          <include name="createnewcontactTestss"/>
+          <include name="verifyLableTextTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.sparsh.qa.TestCases.ContactPageTest -->
+      <class name="com.sparsh.qa.TestCases.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="imagetest"/>
+          <include name="logout"/>
+          <include name="loginpagetitleTest"/>
+          <include name="loginpageTest"/>
+        </methods>
+      </class> <!-- com.sparsh.qa.TestCases.LoginPageTest -->
+      <class name="com.sparsh.qa.TestCases.HomePageTest">
+        <methods>
+          <include name="countlink"/>
+          <include name="verifyhomepagetitleTest"/>
+          <include name="verifyusernameTest"/>
+          <include name="verifydealsclinkTest"/>
+          <include name="setup"/>
+          <include name="verifycontactslinkTest"/>
+          <include name="verifymessagebtnclickTest"/>
+        </methods>
+      </class> <!-- com.sparsh.qa.TestCases.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
