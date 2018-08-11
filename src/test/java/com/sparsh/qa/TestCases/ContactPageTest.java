@@ -44,11 +44,7 @@ public class ContactPageTest extends TestBase {
 	        	  System.out.println("screenshot taken successfully");
 	          }
 	     }
-	     @DataProvider(name="getdataa")
-	     public Object[][] getdatab() throws Exception{
-	    	   Object[][] data=TestUtil.getTextdata(sheetname);
-	    	   return data;   
-	       }
+	     
 	     @Test(priority=2)
 	     public void createnewcontactTests(){
 	    	 try{
@@ -79,7 +75,7 @@ public class ContactPageTest extends TestBase {
 	    	 homepage.clickoncontactlink();
 	    	 int framesize=contactspage.getframes();
 	    	 System.out.println("the number of frames size is "+ framesize);
-	    	sassert.assertEquals(framesize, 3, "actual frameset size is not equal to expected");
+	    	 sassert.assertEquals(framesize, 3, "actual frameset size is not equal to expected");
 	    	 System.out.println("assret executed after faild the testcase");
 	    	 //Thread.sleep(3000);
 	    	 sassert.assertAll();
@@ -90,8 +86,13 @@ public class ContactPageTest extends TestBase {
 	    		 e.printStackTrace();
 	    	 }
 	    	 
-	    	
-	      }
+	    }
+	     
+	     @DataProvider(name="getdataa")
+	     public Object[][] getdatab() throws Exception{
+	    	   Object[][] data=TestUtil.getTextdata(sheetname);
+	    	   return data;   
+	       }
 	     
 	     @DataProvider(name="getdataa")
 	     public Object[][] getdata(){  //getdata() name should be equal to dataProvider name.
@@ -109,12 +110,15 @@ public class ContactPageTest extends TestBase {
 	    	 data[2][1]="Rekha";
 	    	 data[2][2]="pulla";
 	    	 
+	    	 
 	    	 return data; 
+	    	 
 	     }
 	     @Test(priority=1,dataProvider="getdata")
 	         public void createnewcontactTestss(String Titlet,String firstName,String LastName){
 	    	 homepage.clickonnewcontactslink(); 
              contactspage.validatecreatecontact(Titlet,firstName,LastName);
+             System.out.println("the data provider");
 	         } 
 	    
 	     @Test(priority=2)
