@@ -3,12 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sparsh.qa.TestCases.DealsPageTest">
+      <class name="com.sparsh.qa.TestCases.ContactPageTest">
         <methods>
+          <include name="validatecombinedformTest"/>
+          <include name="verifyframelistTest"/>
+          <include name="createnewcontactTests"/>
+          <include name="verifycontactlableTest"/>
+          <include name="createnewcontactTestss"/>
+          <include name="verifyLableTextTest"/>
           <include name="setup"/>
-          <include name="newDealsPageTest"/>
         </methods>
-      </class> <!-- com.sparsh.qa.TestCases.DealsPageTest -->
+      </class> <!-- com.sparsh.qa.TestCases.ContactPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

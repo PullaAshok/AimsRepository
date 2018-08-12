@@ -114,14 +114,14 @@ public class ContactPageTest extends TestBase {
 	    	 return data; 
 	    	 
 	     }
-	     @Test(priority=1,dataProvider="getdata")
+	     @Test(priority=11,dataProvider="getdata")
 	         public void createnewcontactTestss(String Titlet,String firstName,String LastName){
 	    	 homepage.clickonnewcontactslink(); 
              contactspage.validatecreatecontact(Titlet,firstName,LastName);
              System.out.println("the data provider");
 	         } 
 	    
-	     @Test(priority=2)
+	     @Test(priority=1)
 	     
 	     /*public void validatecombinedformTest(String Company, String Industry, String Revenue, String Employee,String Catogory, String Status, String Priority,
 	    		 String Source,String Identifier, String Phonenumber, String Email,String  Notes, String Title, String Firstname, String Middlename,

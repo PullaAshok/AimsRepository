@@ -58,7 +58,7 @@ public class TestBase {
 				    
 				     e_webdriver=new EventFiringWebDriver(driver);  //Initializing the event driver
 				    
-				     Eventlistener=new WebEventListener();  //Import from Testutil package  create object of our 
+				     Eventlistener=new WebEventListener();  //Import from Testutil package  create object of our event linstener class 
 				    
 				      e_webdriver.register(Eventlistener);  //To register my all eventfiring classes
 				     
